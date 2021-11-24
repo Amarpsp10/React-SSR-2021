@@ -1,11 +1,11 @@
 import React from "react";
-import './Home.css'
+import style from './Home.css'
 
 const Home = () => {
   console.log("Home Page Render");
 
   return (
-    <button onClick={() => alert('Hello world')} className='home'>
+    <button onClick={() => alert('Hello world')} className={`${style.home}`} >
       Click Me
     </button>
   )

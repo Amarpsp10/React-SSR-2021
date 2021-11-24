@@ -10,5 +10,11 @@
       ],
       ["@babel/preset-react"]
     ],
-    "plugins": ["css-modules-transform"]
+    "plugins": [
+      [
+          "css-modules-transform", {
+          "extractCss": "./public/style.css"
+          }
+      ]
+  ]
 }
