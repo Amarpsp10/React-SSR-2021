@@ -21,10 +21,14 @@ module.exports = () => ({
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use : ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".css"],
   },
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [new CleanWebpackPlugin(),]
 });
